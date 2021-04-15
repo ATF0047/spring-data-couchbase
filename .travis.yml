@@ -6,4 +6,4 @@ jobs:
   runs-on: ubuntu-latest
   steps:
    - run: mvn test-compile -pl . -am
-   - run: mvn -pl . edu.illinois:nondex-maven-plugin:1.1.2:nondex -Dtest=org.springframework.data.couchbase.core.mapping.MappingCouchbaseConverterTests#idHasAnnotatedIdAndMultipleIdFieldsReverse -DnondexRuns=10
+   - run: mvn -pl . edu.illinois:nondex-maven-plugin:1.1.2:nondex -Dtest=org.springframework.data.couchbase.core.mapping.MappingCouchbaseConverterTests#idHasAnnotatedIdAndMultipleIdFieldsReverse -DnondexRuns=100
